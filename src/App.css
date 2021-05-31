@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+.App {
+  max-width: 600px;
+}
+a {
+  text-decoration: none;
+  font-weight: lighter;
+  color: grey;
+}
+.active {
+  color: black;
+  text-decoration: none; 
+  cursor: default;
+  font-weight: bolder;
+}
+.active:hover {
+color: hsl(0, 0%, 0%);
+font-weight: bolder;
+}

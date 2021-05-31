@@ -1,0 +1,82 @@
+body {
+    padding-top: 25px;
+    font-family: "Montserrat, sans-serif";
+}
+
+form {
+    margin-left: 2px;
+    border-radius: 5px;
+    max-width: 100px;
+}
+
+.updated {
+    color: hsl (0, 0%, 0%);
+    opacity: 0.6;
+    margin-bottom: 0;
+    font-size: 15px;
+}
+
+p {
+    font-size: 15px;
+    font-family: "Monteserrat, sans-serif";
+    padding-top: 10px;
+}
+
+.container {
+    margin-left: 5px;
+}
+
+.card {
+    padding: 15px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+}
+
+.card-body {
+    padding: 0px;
+}
+
+.col-6 {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.WeatherIcon {
+    height: 72px;
+    padding: 0; 
+    margin: 0 auto;
+}
+
+.current-temperature {
+    text-align: right;
+    font-family: "Monteserrat, sans-serif";
+    padding-bottom: 14px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+h4 { 
+    text-transform: uppercase; 
+    font-size: 18px;
+    font-weight: 500;
+}
+.currentTemp {
+    font-size: 20px;
+}
+.humidity {
+    text-transform: uppercase; 
+    font-size: 12px;
+}
+.celcius {
+    font-size: 12px; 
+    vertical-align: top; 
+    font-family: "Monteserrat, Sans-Serif";
+}
+.fahrenheit {
+    font-size: 12px;
+    vertical-align: top; 
+    font-family: "Monteserrat, Sans-Serif";
+}
