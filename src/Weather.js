@@ -3,6 +3,7 @@ import axios from "axios";
 import "./weather.css";
 import Forecast from "./Forecast";
 import FormattedDate from "./ForecastDate";
+import Loader from "react-loader-spinner";
 
 export default function Weather(props) {
     const [WeatherData, setWeatherData] = useState({ ready : false });
@@ -29,7 +30,7 @@ export default function Weather(props) {
                             <div className="row">
                                 <div className="col-6 first-column">
                                     <form id="search-city">
-                                        <imput
+                                        <input
                                         type="text"
                                         className="form-control w-100"
                                         placeholder="Enter City"
@@ -96,6 +97,13 @@ export default function Weather(props) {
         let city = props.defaultCity;
         let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
         axios.get(apiUrl).then(showWeather);
-        return "Loading ...."
+        return (
+            <Loader
+            type="ThreeDots"
+            color="#00BFFF"
+            height={100}
+            width={100}
+            />
+        );
     }
 }
