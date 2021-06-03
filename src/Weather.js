@@ -28,7 +28,7 @@ export default function Weather(props) {
                     <div className="card">
                         <div className="card-body">
                             <div className="row">
-                                <div className="col-6 first-column">
+                                <div className="col-9 first-column">
                                     <form id="search-city">
                                         <input
                                         type="text"
@@ -36,11 +36,11 @@ export default function Weather(props) {
                                         placeholder="Enter City"
                                         autofocus="on"
                                         />
-                                        <div className="btn-group">
-                                            <button type="submit" className="btn btn-primary btn-sm">
+                                        <div className="col-3">
+                                            <button type="submit" className="btn btn-light btn-sm">
                                                 Search
                                             </button>
-                                            <button type="button" className="btn btn-success btn-sm" >
+                                            <button type="button" className="btn btn-info btn-sm" >
                                                 Current
                                             </button>
                                             </div>{""}
