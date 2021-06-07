@@ -52,26 +52,22 @@ export default function Weather(props) {
                                         type="text"
                                         className="form-control w-100"
                                         placeholder="Enter City"
-                                        autoFocus="on"
+                                        autofocus="on"
                                         onChange={handleCityChange}
                                         />
-                                        <div className="col-3">
-                                            <button type="submit" className="btn btn-light btn-sm">
-                                                Search
-                                            </button>
-                                            <button type="button" className="btn btn-info btn-sm" >
-                                                Current
-                                            </button>
-                                            </div>{""}
-                                            </form>
-                                            </div>
-                                            </div>
-                                            </div>
-                                            </div>
-                                            </div>
-                                            <WeatherInfo data={WeatherData} />
-                                            </div>
-                                            );
+                                    <div className="col-3">
+                                        <button type="submit" className="btn btn-light btn-sm">Search</button>
+                                        <button type="button" className="btn btn-info btn-sm">Current</button>
+                                    </div> {" "}
+                                    </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <WeatherInfo data={WeatherData} />
+            </div>
+            );
 
 
     } else {
