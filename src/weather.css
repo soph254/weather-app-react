@@ -43,10 +43,10 @@ p {
     margin-right: 0;
 }
 
-.WeatherIcon {
-    height: 72px;
-    padding: 0; 
-    margin: 0 auto;
+.Weather canvas {
+    margin-right: 10px;
+    margin-top: 5px;
+    display: inline;
 }
 
 .current-temperature {
