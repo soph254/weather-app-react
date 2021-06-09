@@ -58,7 +58,7 @@ export default function Weather(props) {
                                     <div className="col-3">
                                         <button type="submit" className="btn btn-light btn-sm">Search</button>
                                         <button type="button" className="btn btn-info btn-sm">Current</button>
-                                    </div> {" "}
+                                        </div>
                                     </form>
                             </div>
                         </div>
@@ -68,7 +68,6 @@ export default function Weather(props) {
             <WeatherInfo data={WeatherData} />
             </div>
             );
-
 
     } else {
        search();
