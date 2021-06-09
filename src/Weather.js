@@ -3,6 +3,7 @@ import axios from "axios";
 import "./weather.css";
 import Loader from "react-loader-spinner";
 import WeatherInfo from "./WeatherInfo.js"
+import Forecast from "./Forecast";
 
 export default function Weather(props) {
     const [WeatherData, setWeatherData] = useState({ ready : false });
@@ -60,13 +61,18 @@ export default function Weather(props) {
                                         <button type="button" className="btn btn-info btn-sm">Current</button>
                                         </div>
                                     </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <WeatherInfo data={WeatherData} />
-            </div>
+                                     <WeatherInfo data={WeatherData} />
+                                     <div className= "col-6 WeatherData">
+
+                                     </div>
+                                     <WeatherData data={WeatherData} /></div></div>
+                                     <div className="row-forecast">
+                                         < Forecast />
+                                         </div>{" "}
+                                     </div>
+                                     </div>
+                                     </div>
+                                     </div>
             );
 
     } else {
