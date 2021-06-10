@@ -43,7 +43,6 @@ export default function Weather(props) {
         return (
             <div className="Body">
                     <div className="card">
-                        <div className="card-body">
                             <div className="row">
                                 <div className="col-9 first-column">
                                     <form onSubmit={handleSubmit} >
@@ -61,7 +60,6 @@ export default function Weather(props) {
                                     </form>
                                      <WeatherInfo data={WeatherData} />
                                          </div>{" "}
-                                         </div>
                                          </div>
                                          </div>
                                          </div>
