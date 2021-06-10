@@ -3,7 +3,7 @@ import axios from "axios";
 import "./weather.css";
 import Loader from "react-loader-spinner";
 import WeatherInfo from "./WeatherInfo.js"
-import Forecast from "./Forecast";
+
 
 export default function Weather(props) {
     const [WeatherData, setWeatherData] = useState({ ready : false });
@@ -24,15 +24,14 @@ export default function Weather(props) {
 
     function search() {
         const apiKey= "29ebab6de846a52578b47c84cda1eaf1";
-        let city = props.defaultCity;
-        let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+        let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=$${city}&appid=${apiKey}&units=metric`;
         axios.get(apiUrl).then(showWeather);
         
     }
 
     function handleSubmit(event) {
         event.preventDefault();
-        search(city);
+        search();
         
     }
 
@@ -43,12 +42,11 @@ export default function Weather(props) {
     if (WeatherData.ready) {
         return (
             <div className="Body">
-                <div className="container">
                     <div className="card">
                         <div className="card-body">
                             <div className="row">
                                 <div className="col-9 first-column">
-                                    <form onSubmit={handleSubmit} id="search-city">
+                                    <form onSubmit={handleSubmit} >
                                         <input
                                         type="text"
                                         className="form-control w-100"
@@ -61,14 +59,13 @@ export default function Weather(props) {
                                         <button type="button" className="btn btn-info btn-sm">Current</button>
                                         </div>
                                     </form>
-                                     <WeatherInfo  />
-                                    < Forecast />
+                                     <WeatherInfo data={WeatherData} />
                                          </div>{" "}
                                          </div>
                                          </div>
                                          </div>
                                          </div>
-                                         </div>
+        
             );
 
     } else {
