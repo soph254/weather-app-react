@@ -61,18 +61,14 @@ export default function Weather(props) {
                                         <button type="button" className="btn btn-info btn-sm">Current</button>
                                         </div>
                                     </form>
-                                     <WeatherInfo data={WeatherData} />
-                                     <div className= "col-6 WeatherData">
-
-                                     </div>
-                                     <WeatherData data={WeatherData} /></div></div>
-                                     <div className="row-forecast">
-                                         < Forecast />
+                                     <WeatherInfo  />
+                                    < Forecast />
                                          </div>{" "}
-                                     </div>
-                                     </div>
-                                     </div>
-                                     </div>
+                                         </div>
+                                         </div>
+                                         </div>
+                                         </div>
+                                         </div>
             );
 
     } else {
