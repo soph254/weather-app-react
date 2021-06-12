@@ -53,9 +53,11 @@ export default function Weather(props) {
                                             autofocus="on"
                                             onChange={handleCityChange}
                                         />
-                                        <div className="col-3">
-                                            <div className="row">
+                                        <div className="row">
+                                            <div className="col-3">
                                                 <button type="submit" className="btn btn-light btn-sm">Search</button>
+                                            </div>
+                                            <div className="col-3">
                                                 <button type="button" className="btn btn-info btn-sm">Current</button>
                                             </div>
                                         </div>
