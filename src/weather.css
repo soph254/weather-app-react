@@ -1,7 +1,7 @@
 body {
     padding-top: 25px;
     font-family: "Montserrat, sans-serif";
-    opacity: 100%;
+    background-image: (to top, #fddb92 0%, #d1fdff 0%);
 }
 
 form {
@@ -29,6 +29,7 @@ p {
     padding: 15px;
     padding-top: 20px;
     padding-bottom: 40px;
+    background: none;
     
 }
 
