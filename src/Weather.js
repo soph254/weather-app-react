@@ -44,7 +44,7 @@ export default function Weather(props) {
             <div className="Body">
                     <div className="card">
                             <div className="row">
-                                <div class="col-sm-2">
+                                <div class="col-sm-4">
                                     <form onSubmit={handleSubmit} >
                                         <input
                                             type="text"
