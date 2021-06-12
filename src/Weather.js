@@ -44,7 +44,7 @@ export default function Weather(props) {
             <div className="Body">
                     <div className="card">
                             <div className="row">
-                                <div class="col-sm-4">
+                                <div class="col-sm-6">
                                     <form onSubmit={handleSubmit} >
                                         <input
                                             type="text"
@@ -55,11 +55,14 @@ export default function Weather(props) {
                                         />
                                     </form>
                                 </div>    
-                                <div className="col-sm-4">
+                                <div className="col-sm-2">
                                     <button type="submit" className="btn btn-light btn-sm">Search</button>
                                 </div>
-                                <div className="col-sm-4">
+                                <div className="col-sm-2">
                                     <button type="button" className="btn btn-info btn-sm">Current</button>
+                                </div>
+                                <div className="col-sm-*">
+
                                 </div>
                                 <WeatherInfo data={WeatherData} />
                             </div>
