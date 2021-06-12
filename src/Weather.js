@@ -60,14 +60,11 @@ export default function Weather(props) {
                                 <div className="col-sm-2">
                                     <button type="submit" className="btn btn-light btn-sm">Search</button>
                                 </div>
-                                <div className="col-sm-2">
-                                    <button type="button" className="btn btn-info btn-sm">Current</button>
-                                </div>
                                 <div className="col-sm-*">
 
                                 </div>
                                 <WeatherInfo data={WeatherData} />
-                                <WeatherForecast coordinates={WeatherData.coord} />
+                                <WeatherForecast coordinates={WeatherData.coordinates} />
                             </div>
                     </div>
             </div>
