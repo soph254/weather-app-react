@@ -12,36 +12,35 @@ export default function WeatherInfo(props) {
                     <h2>{props.data.city}</h2>
                     <FormattedDate date = {props.data.date} />
                     <div className="row">
-                        <div className="col-sm-6">
+                        <div className="col-sm-4">
                             <div className="right-temperature-details">
-                            <div className="float-left">
-                                <WeatherIcon code={props.data.icon} />
-                                <h4 className="weatherDescription">{props.data.description}</h4>
+                                <div className="float-left">
+                                    <WeatherIcon code={props.data.icon} />
+                                    <h4 className="weatherDescription">{props.data.description}</h4>
+                                </div>
                             </div>
-                        </div>
-                        <div className="col-sm-6">
+                        </div>    
+                        <div className="col-sm-4">
                             <div className="float-left">
                                 <WeatherTemperature celcius={props.data.temperature} />
                                 <span className="current-temp">{props.data.temperature}</span>  
                             </div>
                         </div>
-                    </div>
-
-                            
-                            
-                        </div>
-                        <div className="humidity">
-                            Humidity: {props.data.humidity}
-                            <br />
-                            Wind: {props.data.wind}{" "}
-                            km/h {" "} mph
+                        <div className="col-sm-4">
+                            <div className="humidity">
+                                Humidity: {props.data.humidity}
+                                <br/>
+                                Wind: {props.data.wind}{" "}
+                                km/h {" "} mph
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div className="row forecast">
-                    <Forecast />
-                </div> {" "}
             </div>
+            <div className="row forecast">
+                <Forecast />
+            </div> {" "}
+        </div>
     );
             
         
