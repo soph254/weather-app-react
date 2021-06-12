@@ -44,26 +44,24 @@ export default function Weather(props) {
             <div className="Body">
                     <div className="card">
                             <div className="row">
-                                <div className="first-column">
-                                    <div class="col-sm-4">
-                                        <form onSubmit={handleSubmit} >
-                                            <input
-                                                type="text"
-                                                className="form-control w-100"
-                                                placeholder="Enter City"
-                                                autofocus="on"
-                                                onChange={handleCityChange}
-                                            />
-                                        </form>
-                                    </div>    
-                                    <div className="col-sm-4">
-                                        <button type="submit" className="btn btn-light btn-sm">Search</button>
-                                    </div>
-                                    <div className=".col-sm-4">
-                                        <button type="button" className="btn btn-info btn-sm">Current</button>
-                                    </div>
-                                    <WeatherInfo data={WeatherData} />
+                                <div class="col-sm-4">
+                                    <form onSubmit={handleSubmit} >
+                                        <input
+                                            type="text"
+                                            className="form-control w-100"
+                                            placeholder="Enter City"
+                                            autofocus="on"
+                                            onChange={handleCityChange}
+                                        />
+                                    </form>
+                                </div>    
+                                <div className="col-sm-4">
+                                    <button type="submit" className="btn btn-light btn-sm">Search</button>
                                 </div>
+                                <div className="col-sm-4">
+                                    <button type="button" className="btn btn-info btn-sm">Current</button>
+                                </div>
+                                <WeatherInfo data={WeatherData} />
                             </div>
                     </div>
             </div>
