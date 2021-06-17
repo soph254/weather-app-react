@@ -8,8 +8,10 @@ export default function WeatherInfo(props) {
         <div className="WeatherInfo">
             <div className="current-temperature">
                 <div className="current-temperature">
+                    <div className="float-right">
                     <h2>{props.data.city}</h2>
                     <FormattedDate date = {props.data.date} />
+                    </div>
                     <div className="row">
                         <div className="col-sm-4">
                             <div className="right-temperature-details">
