@@ -45,29 +45,29 @@ export default function Weather(props) {
         return (
             <div className="Body">
                     <div className="card">
-                            <div className="row">
-                                <div class="col-sm-4">
-                                    <form onSubmit={handleSubmit} >
-                                        <input
-                                            type="search"
-                                            className="form-control w-100"
-                                            placeholder="Enter City"
-                                            autofocus="on"
-                                            onChange={handleCityChange}
-                                        />
-                                    </form>
-                                </div>    
-                                <div className="col-sm-2">
-                                    <button type="submit" className="btn btn-light btn-sm">Search</button>
-                                </div>
-                                <div className="col-sm-*">
+                            <form onSubmit={handleSubmit}>
+                                <div className="row">
+                                <div className="col -sm-4">
+                                    <input 
+                                    type="search"
+                                    className="form-control w-100"
+                                    placeholder="Enter City"
+                                    autofocus="on"
+                                    onChange={handleCityChange}
+                                    />
+                                    </div>
+                                    <div className="col-sm-2">
+                                        <button type="submit" className="btn btn-light btn-sm">Search</button>                           
+                                    </div>
+                                    <div className="col-sm-*">
 
-                                </div>
+                                    </div>
+                                    </div>
+                            </form>
                                 <WeatherInfo data={WeatherData} />
                                 <WeatherForecast coordinates={WeatherData.coordinates} />
                             </div>
                     </div>
-            </div>
         
         );
 
